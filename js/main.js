@@ -11,12 +11,20 @@ var dropAzienda = $('.li-drop-azienda > azienda-drop-down');
 // eventi
 aProdotti.click(function()  {
     console.log('stai cliccando su prodotti');
+
     $(this).next('.drop-down').toggle();
 });
 
 aAzienda.click(function() {
     console.log('stai cliccando su azienda');
-    $(this).next('.azienda-drop-down').toggle();
+
+    var actualAzienda = $(this).next('.azienda-drop-down');
+
+    dropAzienda.not(actualAzienda).hide();
+
+    actualAzienda.toggle();
+
+    // $(this).next('.azienda-drop-down').toggle();
 });
 
 

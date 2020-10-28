@@ -4,15 +4,27 @@
     box-sizing: border-box;
 }
 
+/* utilities */
 
 ul li {
     list-style: none;
-    display: inline-block;
     padding: 20px 10px;
 }
 
 a {
     text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.pos-rel{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
 }
 
 .container-content{
@@ -21,4 +33,16 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+/* visibilità gestita con jquery */
+.prodotti-drop-down{    
+    left: -10px;
+    /* display: none; */
+}
+
+/* visibilità gestita con jquery */
+.azienda-drop-down{
+    left: -10px;
+    display: none;
 }

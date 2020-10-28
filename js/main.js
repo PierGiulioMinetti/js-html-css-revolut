@@ -16,6 +16,7 @@ aProdotti.click(function()  {
 
 aAzienda.click(function() {
     console.log('stai cliccando su azienda');
+    $(this).next('.azienda-drop-down').toggle();
 });
 
 

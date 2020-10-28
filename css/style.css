@@ -36,16 +36,9 @@ a {
 }
 
 /* visibilità gestita con jquery */
-.prodotti-drop-down{    
-    left: -10px;
-}
 
 .drop-down{
     display: none;
-
-}
-/* visibilità gestita con jquery */
-.azienda-drop-down{
     left: -10px;
-    display: none;
+
 }

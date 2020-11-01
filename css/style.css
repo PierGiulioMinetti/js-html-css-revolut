@@ -13,6 +13,17 @@ ul li {
 
 a {
     text-decoration: none;
+    color: rgb(165, 171, 178);
+}
+
+a:hover{
+    color: orange;
+}
+
+.drop-down>ul{
+    /* background-color: red; */
+    /* border: 1px solid #f2f2f2; */
+    box-shadow: 5px 5px 18px #f2f2f2;
 }
 
 .d-flex{
@@ -27,16 +38,45 @@ a {
     position: absolute;
 }
 
+.col-black{
+    color: black;
+}
+
 .container-content{
+    padding-top: 10px;
     max-width: 1170px;
-    border: 1px solid black;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-/* visibilità gestita con jquery */
+.app{
+    color: white;
+    padding: 10px 25px;
+    background-color: #eb008e;
+    border-radius: 20px;
+}
 
+.left-bar ul li a {
+    margin-left: 40px;
+}
+
+.logo img {
+    max-width: 100px;
+    position: relative;
+    bottom: 5px;
+}
+
+.affiliates::before{
+    content: 'Nuovo';
+    position: absolute;
+    color: #eb008e;
+    font-size: 10px;
+    right: 2px;
+    bottom: 89px;
+}
+
+/* visibilità gestita con jquery */
 .drop-down{
     display: none;
     left: -10px;

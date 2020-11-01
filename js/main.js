@@ -7,7 +7,16 @@ var dropMenu = $('.with-d-down > .drop-down');
 
 // visibilità
 dropLinks.click(function() {
-    $(this).next('.drop-down').toggle();
+    
+    var actualMenu = $(this).next('.drop-down');
+
+    dropMenu.not(actualMenu).hide();
+
+    // $(this).next('.drop-down').toggle();
+    
+
+    actualMenu.toggle();
+
 })
 
  });
